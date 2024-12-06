@@ -15,9 +15,9 @@
     "build": "nuxt build .playground",
     "generate": "nuxt generate .playground",
     "preview": "nuxt preview .playground",
-    "release:patch": "npm run lint && npm run prepack && changelogen --release --patch --push && npm publish --access public",
-    "release:minor": "npm run lint && npm run prepack && changelogen --release --minor --push && npm publish --access public",
-    "release:major": "npm run lint && npm run prepack && changelogen --release --major --push && npm publish --access public",
+    "release:patch": "npm run lint && npm run build && changelogen --release --patch --push && npm publish --access public",
+    "release:minor": "npm run lint && npm run build && changelogen --release --minor --push && npm publish --access public",
+    "release:major": "npm run lint && npm run build && changelogen --release --major --push && npm publish --access public",
     "lint": "eslint .",
     "lint:fix": "eslint --fix ."
   },
