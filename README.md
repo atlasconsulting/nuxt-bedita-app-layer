@@ -1,73 +1,44 @@
-# Nuxt Layer Starter
+# Nuxt layer for BEdita apps
 
-Create Nuxt extendable layer with this GitHub template.
+This is a Nuxt layer for building Nuxt apps needed BEdita API.
 
-## Setup
+Once installed you can use every module, components, pages, composables, etc... present in the layer in your app without have to install 
+
+It includes:
+
+* `@atlasconsulting/nuxt-bedita`
+* `@nuxtjs/tailwindcss`
+
+## Use in Nuxt app
+
+### Install layer package
+
+Install the package
+
+```bash
+npm install --save `@atlasconsulting/nuxt-bedita-app-layer`
+```
+
+and add layer to `nuxt.config.ts`
+
+```ts
+export default defineNuxtConfig({
+  extends: ['@atlasconsulting/nuxt-bedita-app-layer'],
+});
+```
+
+## Dev Setup
 
 Make sure to install the dependencies:
 
 ```bash
-pnpm install
+npm install
 ```
 
-## Working on your layer
+## Working on layer
 
-Your layer is at the root of this repository, it is exactly like a regular Nuxt project, except you can publish it on NPM.
+This layer is at the root of this repository, it is exactly like a regular Nuxt project.
 
 The `.playground` directory should help you on trying your layer during development.
 
-Running `pnpm dev` will prepare and boot `.playground` directory, which imports your layer itself.
-
-## Distributing your layer
-
-Your Nuxt layer is shaped exactly the same as any other Nuxt project, except you can publish it on NPM.
-
-To do so, you only have to check if `files` in `package.json` are valid, then run:
-
-```bash
-npm publish --access public
-```
-
-Once done, your users will only have to run:
-
-```bash
-npm install --save your-layer
-```
-
-Then add the dependency to their `extends` in `nuxt.config`:
-
-```ts
-defineNuxtConfig({
-  extends: 'your-layer'
-})
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-pnpm dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-pnpm build
-```
-
-Or statically generate it with:
-
-```bash
-pnpm generate
-```
-
-Locally preview production build:
-
-```bash
-pnpm preview
-```
-
-Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Running `npm run dev` will prepare and boot `.playground` directory, which imports your layer itself.
