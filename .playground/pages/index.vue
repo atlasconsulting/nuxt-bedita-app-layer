@@ -11,7 +11,8 @@
     </div>
 
     <div>
-      <button class="bg-sky-600 hover:bg-sky-500 text-white px-3 py-1 text-sm font-bold rounded"
+      <button
+        class="bg-sky-600 hover:bg-sky-500 text-white px-3 py-1 text-sm font-bold rounded"
         :class="{ '!bg-neutral-300 pointer-events-none': status === 'pending' }"
         :disabled="status === 'pending'"
         @click="refresh()">REFRESH</button>
@@ -42,5 +43,5 @@
 </template>
 
 <script lang="ts" setup>
-  const { data, status, error, refresh } = await useFetch<ApiResponseBodyList>('/api/bedita/model/object_types');
+const { data, status, error, refresh } = await useFetch<ApiResponseBodyList>('/api/bedita/model/object_types');
 </script>
