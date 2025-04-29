@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v0.2.0
+
+[compare changes](https://github.com/atlasconsulting/nuxt-bedita-app-layer/compare/v0.1.0...v0.2.0)
+
+### 🚀 Enhancements
+
+- ⚠️  Upgrade deps ([9697955](https://github.com/atlasconsulting/nuxt-bedita-app-layer/commit/9697955))
+
+### 🏡 Chore
+
+- Add license file ([99fda80](https://github.com/atlasconsulting/nuxt-bedita-app-layer/commit/99fda80))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Upgrade deps ([9697955](https://github.com/atlasconsulting/nuxt-bedita-app-layer/commit/9697955))
+
+### ❤️ Contributors
+
+- Alberto Pagliarini ([@batopa](https://github.com/batopa))
+
 ## v0.1.0
 
 
