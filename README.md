@@ -16,7 +16,7 @@ It includes:
 Install the package
 
 ```bash
-npm install --save `@atlasconsulting/nuxt-bedita-app-layer`
+npm install --save @atlasconsulting/nuxt-bedita-app-layer
 ```
 
 and add layer to `nuxt.config.ts`
